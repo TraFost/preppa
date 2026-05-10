@@ -18,8 +18,17 @@
   --color-success: var(--success);
   --color-error: var(--error);
   --color-surface: var(--surface);
+
   --font-sans: var(--font-dm-sans);
   --font-serif: var(--font-instrument-serif);
+
+  --radius-button: 0.75rem;
+  --radius-card: 1.25rem;
+  --radius-input: 0.75rem;
+  --radius-full: 9999px;
+
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-smooth: cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 body {

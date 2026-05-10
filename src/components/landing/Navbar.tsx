@@ -1,6 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
+import { Logo } from "@/components/logo"
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false)
@@ -17,11 +18,14 @@ export function Navbar() {
         scrolled ? "bg-white/90 backdrop-blur-md" : "bg-transparent"
       }`}
     >
-      <div className="max-w-[1100px] mx-auto px-5 flex items-center justify-between h-16">
-        <span className="text-xl font-medium tracking-tight">
-          Preppa<span className="text-accent">.</span>
-        </span>
-        <button className="bg-accent text-white rounded-[12px] px-4 py-2 text-sm font-medium hover:opacity-90 transition-opacity">
+      <div className="max-w-screen-xl mx-auto px-5 flex items-center justify-between h-16">
+        <div className="flex items-center gap-2">
+          <Logo width={24} height={24} />
+          <span className="text-xl font-medium tracking-tight">
+            Preppa<span className="text-accent">.</span>
+          </span>
+        </div>
+        <button className="bg-accent text-white rounded-button px-4 py-2 text-sm font-medium hover:opacity-90 transition-opacity">
           Get Early Access
         </button>
       </div>

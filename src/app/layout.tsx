@@ -16,7 +16,7 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "ADA Arena — Prepare for Apple Developer Academy",
+  title: "Preppa — Prepare for Apple Developer Academy",
   description: "Practice daily. Simulate the real test. Track your readiness. The smartest way to prepare for Apple Developer Academy.",
 };
 

@@ -6,7 +6,7 @@ export function SignUpSection() {
   return (
     <section className="bg-[#FAFAF8] py-24 md:py-28 px-5 text-center">
       <motion.div
-        className="max-w-[600px] mx-auto"
+        className="max-w-150 mx-auto"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
@@ -17,9 +17,9 @@ export function SignUpSection() {
           <input
             type="email"
             placeholder="Enter your email"
-            className="flex-1 px-4 py-3 rounded-[12px] border border-zinc-200 text-sm outline-none focus:border-accent transition-colors"
+            className="flex-1 px-4 py-3 rounded-xl border border-zinc-200 text-sm outline-none focus:border-accent transition-colors"
           />
-          <button className="bg-accent text-white rounded-[12px] px-6 py-3 text-sm font-medium whitespace-nowrap hover:opacity-90 transition-opacity">
+          <button className="bg-accent text-white rounded-xl px-6 py-3 text-sm font-medium whitespace-nowrap hover:opacity-90 transition-opacity">
             Get Early Access
           </button>
         </div>

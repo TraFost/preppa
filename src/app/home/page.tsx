@@ -1,9 +1,9 @@
-import { GreetingSection } from "@/components/home/GreetingSection"
-import { StreakXpPills } from "@/components/home/StreakXpPills"
-import { ReadinessRingCard } from "@/components/home/ReadinessRingCard"
-import { DailyMissionCard } from "@/components/home/DailyMissionCard"
-import { CTASection } from "@/components/home/CTASection"
-import { BottomNav } from "@/components/home/BottomNav"
+import { GreetingSection } from "@components/home/GreetingSection"
+import { StreakXpPills } from "@components/home/StreakXpPills"
+import { ReadinessRingCard } from "@components/home/ReadinessRingCard"
+import { DailyMissionCard } from "@components/home/DailyMissionCard"
+import { CTASection } from "@components/home/CTASection"
+import { BottomNav } from "@components/home/BottomNav"
 
 export default function Home() {
   return (

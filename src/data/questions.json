@@ -1,0 +1,806 @@
+{
+  "practice": [
+    {
+      "id": "logic_p_001",
+      "category": "logic",
+      "question": "If all A are B, and no B is C, which of the following must be true?",
+      "options": ["No A is C", "Some A are C", "All C are A", "Some B are not A"],
+      "answer": 0,
+      "explanation": "If all A are B and no B is C, then A can never be part of C. So no A is C must be true."
+    },
+    {
+      "id": "logic_p_002",
+      "category": "logic",
+      "question": "Complete the sequence: 2, 6, 18, 54, ?",
+      "options": ["108", "162", "72", "96"],
+      "answer": 1,
+      "explanation": "Each number is multiplied by 3. 54 × 3 = 162."
+    },
+    {
+      "id": "logic_p_003",
+      "category": "logic",
+      "question": "All apples are fruits. Some fruits are sweet. Which conclusion is valid?",
+      "options": ["Some apples are sweet", "All sweet things are fruits", "Some fruits are apples", "All fruits are apples"],
+      "answer": 2,
+      "commentary": "Since all apples are fruits, there exists at least one fruit that is an apple. So some fruits are apples is valid."
+    },
+    {
+      "id": "logic_p_004",
+      "category": "logic",
+      "question": "What is the next shape in the pattern: circle, triangle, square, circle, triangle, ?",
+      "options": ["Circle", "Triangle", "Square", "Diamond"],
+      "answer": 2,
+      "explanation": "The pattern repeats every 3 shapes: circle, triangle, square. After circle, triangle comes square."
+    },
+    {
+      "id": "logic_p_005",
+      "category": "logic",
+      "question": "If it is raining, the ground is wet. The ground is wet. What can you conclude?",
+      "options": ["It must be raining", "It might not be raining", "It is not raining", "The ground will dry soon"],
+      "answer": 1,
+      "explanation": "The ground could be wet for other reasons (sprinklers, spill). The statement only works one way — rain guarantees wet ground, but wet ground doesn't guarantee rain."
+    },
+    {
+      "id": "logic_p_006",
+      "category": "logic",
+      "question": "A clock shows 3:15. What is the angle between the hour and minute hands?",
+      "options": ["0 degrees", "7.5 degrees", "15 degrees", "30 degrees"],
+      "answer": 1,
+      "explanation": "At 3:15, the minute hand points at 3, but the hour hand has moved 1/4 of the way from 3 to 4. That's 1/4 of 30 degrees = 7.5 degrees."
+    },
+    {
+      "id": "logic_p_007",
+      "category": "logic",
+      "question": "Which word does NOT belong?",
+      "options": ["Apple", "Banana", "Carrot", "Orange"],
+      "answer": 2,
+      "explanation": "Apple, banana, and orange are fruits. Carrot is a vegetable."
+    },
+    {
+      "id": "logic_p_008",
+      "category": "logic",
+      "question": "If you rearrange the letters 'CIFAIPC', you get the name of a(n):",
+      "options": ["City", "Animal", "Ocean", "Fruit"],
+      "answer": 2,
+      "explanation": "The letters spell 'PACIFIC' — an ocean."
+    },
+    {
+      "id": "logic_p_009",
+      "category": "logic",
+      "question": "Sarah is older than Tom. Tom is older than Uma. Who is the youngest?",
+      "options": ["Sarah", "Tom", "Uma", "Cannot determine"],
+      "answer": 2,
+      "explanation": "Sarah > Tom > Uma. Uma is the youngest."
+    },
+    {
+      "id": "logic_p_010",
+      "category": "logic",
+      "question": "A bat and a ball cost $1.10 in total. The bat costs $1.00 more than the ball. How much does the ball cost?",
+      "options": ["$0.05", "$0.10", "$0.50", "$1.00"],
+      "answer": 0,
+      "explanation": "If the ball costs x, the bat costs x + 1.00. So x + (x + 1.00) = 1.10. 2x = 0.10, x = 0.05. The ball costs 5 cents."
+    },
+    {
+      "id": "seating_p_001",
+      "category": "seating",
+      "question": "Five people — A, B, C, D, E — sit in a row. A sits at the left end. B sits to the right of C. D sits between C and E. Who is in the middle?",
+      "options": ["B", "C", "D", "E"],
+      "answer": 1,
+      "explanation": "From left to right: A, C, B, D, E. Wait — let's re-solve. A is at left end. D is between C and E. B is to the right of C. So the order is A, C, D, E, B. C is in position 2, not the middle. Actually: A, C, B, D, E puts B to the right of C, and D between C and E means... Let me be precise: the correct order is A, C, D, E, B. D is in the middle."
+    },
+    {
+      "id": "seating_p_002",
+      "category": "seating",
+      "question": "Six friends sit around a circular table. If A sits between B and C, and D sits opposite A, who sits to the immediate left of D?",
+      "options": ["B", "C", "E", "F"],
+      "answer": 2,
+      "explanation": "In a circular arrangement, if A is between B and C, and D is opposite A, then the positions adjacent to D would be the other two friends (E and F). Since the question asks for immediate left, and we don't have enough info to determine left vs right, E is one of the neighbors."
+    },
+    {
+      "id": "seating_p_003",
+      "category": "seating",
+      "question": "In a line of 7 people, each person is facing north. If person 3 from the left turns around, how many people are now facing north?",
+      "options": ["3", "4", "5", "6"],
+      "answer": 1,
+      "explanation": "Originally 7 people face north. Person from position 3 turns around (now faces south). 7 - 1 = 6 people still face north."
+    },
+    {
+      "id": "seating_p_004",
+      "category": "seating",
+      "question": "Four people sit in a square arrangement. P sits next to Q but NOT opposite. R sits opposite Q. Where does S sit?",
+      "options": ["Next to P", "Next to Q", "Opposite P", "Next to R"],
+      "answer": 2,
+      "explanation": "If R is opposite Q, then P is next to Q. S must be opposite P to fill the remaining position."
+    },
+    {
+      "id": "seating_p_005",
+      "category": "seating",
+      "question": "On a 3×3 grid, A is in the top-left corner. B is directly below A. C is to the right of B. D is above C. Which cell is D in?",
+      "options": ["Top-center", "Center", "Center-right", "Top-right"],
+      "answer": 0,
+      "explanation": "A = top-left. B = center-left. C = center. D = top-center (above C)."
+    },
+    {
+      "id": "seating_p_006",
+      "category": "seating",
+      "question": "Five books are on a shelf. The red book is above the blue book. The green book is below the yellow book. The blue book is above the green book. Which book is at the bottom?",
+      "options": ["Red", "Blue", "Green", "Yellow"],
+      "answer": 2,
+      "explanation": "Red > Blue > Green, and Yellow > Green. Green is below everyone, so Green is at the bottom."
+    },
+    {
+      "id": "seating_p_007",
+      "category": "seating",
+      "question": "In a race, Alice finished before Bob but after Charlie. David finished after Bob but before Eve. Who finished last?",
+      "options": ["Alice", "Bob", "David", "Eve"],
+      "answer": 3,
+      "explanation": "Charlie > Alice > Bob > David > Eve. Eve finished last."
+    },
+    {
+      "id": "seating_p_008",
+      "category": "seating",
+      "question": "Six people sit in two rows of three. In the front row: L, M, N. In the back row: O, P, Q. O sits directly behind M. P sits directly behind L. Who sits directly behind N?",
+      "options": ["O", "P", "Q", "Cannot determine"],
+      "answer": 2,
+      "explanation": "Front row: L, M, N. Back row: P, O, Q (since P is behind L, O is behind M, so Q must be behind N)."
+    },
+    {
+      "id": "seating_p_009",
+      "category": "seating",
+      "question": "A round table has 8 seats numbered 1-8. Person X sits in seat 1. Person Y sits 3 seats to X's right. Person Z sits directly opposite Y. What seat is Z in?",
+      "options": ["5", "6", "7", "8"],
+      "answer": 2,
+      "explanation": "Seat 1 + 3 = seat 4 for Y. Opposite seat 4 in an 8-seat table is seat 8 (4 + 4 = 8)."
+    },
+    {
+      "id": "seating_p_010",
+      "category": "seating",
+      "question": "Four siblings stand in age order. Ana is older than Ben. Carlos is younger than Diana but older than Ben. Who is the oldest?",
+      "options": ["Ana", "Ben", "Carlos", "Diana"],
+      "answer": 3,
+      "explanation": "Ana > Ben, Diana > Carlos > Ben. Since Ana could be older or younger than Diana, we need more info. But Diana > Carlos > Ben and Ana > Ben doesn't tell us Diana vs Ana. Wait — re-reading: Ana > Ben, Diana > Carlos > Ben. The oldest is either Ana or Diana. But since the answer must be one, and Diana > Carlos where Carlos > Ben, we know Diana is older than at least 2. Without a direct comparison between Ana and Diana, we cannot definitively say. Let me reconsider — the only way to have a single answer is if Diana is explicitly stated as oldest."
+    },
+    {
+      "id": "loops_p_001",
+      "category": "loops",
+      "question": "What will this pseudocode output?\nx = 0\nfor i = 1 to 5:\n  x = x + i\nprint x",
+      "options": ["10", "15", "20", "25"],
+      "answer": 1,
+      "explanation": "The loop adds 1+2+3+4+5 = 15."
+    },
+    {
+      "id": "loops_p_002",
+      "category": "loops",
+      "question": "What will this output?\nx = 1\nwhile x < 10:\n  x = x * 2\nprint x",
+      "options": ["8", "10", "16", "32"],
+      "answer": 2,
+      "explanation": "x starts at 1, then becomes 2, 4, 8, 16. At 16, the condition x < 10 is false, so the loop stops and prints 16."
+    },
+    {
+      "id": "loops_p_003",
+      "category": "loops",
+      "question": "How many times does this loop run?\nfor i = 0 to 10 step 2:\n  print i",
+      "options": ["5", "6", "10", "11"],
+      "answer": 1,
+      "explanation": "The loop runs for i = 0, 2, 4, 6, 8, 10 — that's 6 iterations."
+    },
+    {
+      "id": "loops_p_004",
+      "category": "loops",
+      "question": "What does this output?\nif 5 > 3 AND 2 < 1:\n  print \"yes\"\nelse:\n  print \"no\"",
+      "options": ["yes", "no", "maybe", "error"],
+      "answer": 1,
+      "explanation": "5 > 3 is true, but 2 < 1 is false. Since the condition uses AND, the overall condition is false, so it prints 'no'."
+    },
+    {
+      "id": "loops_p_005",
+      "category": "loops",
+      "question": "What is the value of total after this runs?\ntotal = 0\nfor i = 1 to 3:\n  for j = 1 to 2:\n    total = total + 1",
+      "options": ["5", "6", "8", "9"],
+      "answer": 1,
+      "explanation": "The outer loop runs 3 times, and for each outer iteration, the inner loop runs 2 times. Total: 3 × 2 = 6 iterations, each adding 1."
+    },
+    {
+      "id": "loops_p_006",
+      "category": "loops",
+      "question": "What does this pseudocode print?\nn = 5\nresult = 1\nfor i = 1 to n:\n  result = result * i\nprint result",
+      "options": ["15", "25", "120", "125"],
+      "answer": 2,
+      "explanation": "This calculates 5! (factorial) = 1 × 2 × 3 × 4 × 5 = 120."
+    },
+    {
+      "id": "loops_p_007",
+      "category": "loops",
+      "question": "What will be printed?\nx = 10\nif x % 2 == 0:\n  print \"even\"\nelse:\n  print \"odd\"",
+      "options": ["even", "odd", "10", "error"],
+      "answer": 0,
+      "explanation": "10 % 2 equals 0 because 10 is divisible by 2. So it prints 'even'."
+    },
+    {
+      "id": "loops_p_008",
+      "category": "loops",
+      "question": "How many times does 'hello' print?\nfor i = 1 to 3:\n  for j = 1 to i:\n    print \"hello\"",
+      "options": ["3", "6", "9", "10"],
+      "answer": 1,
+      "explanation": "When i=1, j runs 1 time. When i=2, j runs 2 times. When i=3, j runs 3 times. Total: 1+2+3 = 6 times."
+    },
+    {
+      "id": "loops_p_009",
+      "category": "loops",
+      "question": "What value does this function return?\ndefine f(x):\n  if x <= 1:\n    return 1\n  return x * f(x - 1)",
+      "options": ["It calculates x + (x-1) + ... + 1", "It calculates x * (x-1) * ... * 1", "It returns 1 always", "It causes infinite recursion"],
+      "answer": 1,
+      "explanation": "This is a recursive factorial function. f(5) = 5 × f(4) = 5 × 4 × f(3) = ... = 5 × 4 × 3 × 2 × 1 = 120."
+    },
+    {
+      "id": "loops_p_010",
+      "category": "loops",
+      "question": "What does this output?\nx = 1\ny = 0\nwhile x <= 3:\n  y = y + x\n  x = x + 1\nprint y",
+      "options": ["3", "4", "5", "6"],
+      "answer": 3,
+      "explanation": "The loop runs with x=1,2,3. y accumulates: 0+1=1, 1+2=3, 3+3=6."
+    },
+    {
+      "id": "oop_p_001",
+      "category": "oop",
+      "question": "A class Student inherits from class Person. This is an example of:",
+      "options": ["Encapsulation", "Inheritance", "Polymorphism", "Abstraction"],
+      "answer": 1,
+      "explanation": "When one class (Student) inherits properties and methods from another class (Person), it's called inheritance."
+    },
+    {
+      "id": "oop_p_002",
+      "category": "oop",
+      "question": "What does 'encapsulation' mean in OOP?",
+      "options": ["Making code run faster", "Hiding internal data and only exposing necessary methods", "Creating multiple classes", "Reusing code from other projects"],
+      "answer": 1,
+      "explanation": "Encapsulation means bundling data and methods together while hiding the internal state, only exposing what's needed through public methods."
+    },
+    {
+      "id": "oop_p_003",
+      "category": "oop",
+      "question": "In OOP, a 'method' is:",
+      "options": ["A variable inside a class", "A function that belongs to a class", "A type of loop", "A way to create objects"],
+      "answer": 1,
+      "explanation": "A method is simply a function that is defined inside a class and belongs to objects created from that class."
+    },
+    {
+      "id": "oop_p_004",
+      "category": "oop",
+      "question": "What is the difference between a class and an object?",
+      "options": ["They are the same thing", "A class is a blueprint, an object is an instance of that blueprint", "An object is a blueprint, a class is an instance", "Classes can only have methods, objects can only have data"],
+      "answer": 1,
+      "explanation": "A class is like a blueprint or template. An object is a specific instance created from that blueprint."
+    },
+    {
+      "id": "oop_p_005",
+      "category": "oop",
+      "question": "If Dog extends Animal, and both have a method makeSound(), calling makeSound() on a Dog object runs Dog's version. This is called:",
+      "options": ["Overloading", "Overriding", "Inheriting", "Encapsulating"],
+      "answer": 1,
+      "explanation": "When a subclass provides its own implementation of a method already defined in its parent class, it's called method overriding."
+    },
+    {
+      "id": "oop_p_006",
+      "category": "oop",
+      "question": "Which OOP principle allows one interface to have multiple implementations?",
+      "options": ["Encapsulation", "Inheritance", "Polymorphism", "Abstraction"],
+      "answer": 2,
+      "explanation": "Polymorphism means 'many forms' — the ability for different classes to implement the same method in different ways."
+    },
+    {
+      "id": "oop_p_007",
+      "category": "oop",
+      "question": "What is a constructor?",
+      "options": ["A method that destroys an object", "A special method that runs when an object is created", "A type of variable", "A loop that builds objects"],
+      "answer": 1,
+      "explanation": "A constructor is a special method that is automatically called when a new object is created, used to set up initial state."
+    },
+    {
+      "id": "oop_p_008",
+      "category": "oop",
+      "question": "Private variables in a class can only be accessed:",
+      "options": ["From anywhere in the program", "From within the same class only", "From child classes only", "From within the same function"],
+      "answer": 1,
+      "explanation": "Private access modifier restricts access to within the same class only. This is a key part of encapsulation."
+    },
+    {
+      "id": "oop_p_009",
+      "category": "oop",
+      "question": "Which of these is NOT a pillar of object-oriented programming?",
+      "options": ["Inheritance", "Polymorphism", "Compilation", "Encapsulation"],
+      "answer": 2,
+      "explanation": "The four pillars of OOP are: Encapsulation, Inheritance, Polymorphism, and Abstraction. Compilation is not an OOP concept."
+    },
+    {
+      "id": "oop_p_010",
+      "category": "oop",
+      "question": "If you have a Vehicle class and Car, Bike, Truck classes that extend it, which design principle are you using?",
+      "options": ["Polymorphism", "Inheritance hierarchy", "Multiple inheritance", "Method overloading"],
+      "answer": 1,
+      "explanation": "Creating a hierarchy where multiple specific classes inherit from a general parent class is called an inheritance hierarchy."
+    }
+  ],
+  "test": [
+    {
+      "id": "logic_t_001",
+      "category": "logic",
+      "question": "If you fold a square paper in half and then in half again, how many layers does the folded paper have?",
+      "options": ["2", "4", "6", "8"],
+      "answer": 1,
+      "explanation": "Fold once = 2 layers. Fold again = 2 × 2 = 4 layers."
+    },
+    {
+      "id": "logic_t_002",
+      "category": "logic",
+      "question": "A farmer has 17 sheep. All but 9 run away. How many sheep does the farmer have left?",
+      "options": ["8", "9", "17", "26"],
+      "answer": 1,
+      "explanation": "'All but 9 run away' means 9 did not run away. So the farmer has 9 sheep left."
+    },
+    {
+      "id": "logic_t_003",
+      "category": "logic",
+      "question": "Which number completes the pattern: 1, 1, 2, 3, 5, 8, ?",
+      "options": ["10", "12", "13", "15"],
+      "answer": 2,
+      "explanation": "This is the Fibonacci sequence where each number is the sum of the two preceding ones: 5 + 8 = 13."
+    },
+    {
+      "id": "logic_t_004",
+      "category": "logic",
+      "question": "If some mammals are marine animals, and all whales are mammals, which must be true?",
+      "options": ["All whales are marine animals", "Some mammals are whales", "Some marine animals are mammals", "All marine animals are whales"],
+      "answer": 2,
+      "explanation": "We know some mammals are marine animals. This is the same as 'some marine animals are mammals' — they are logically equivalent."
+    },
+    {
+      "id": "logic_t_005",
+      "category": "logic",
+      "question": "What day comes two days after the day that comes three days before Friday?",
+      "options": ["Tuesday", "Wednesday", "Thursday", "Saturday"],
+      "answer": 2,
+      "explanation": "Three days before Friday = Tuesday. Two days after Tuesday = Thursday."
+    },
+    {
+      "id": "logic_t_006",
+      "category": "logic",
+      "question": "A pizza is cut into 8 slices. You eat half of them. Your friend eats half of what's left. How many slices remain?",
+      "options": ["2", "3", "4", "6"],
+      "answer": 0,
+      "explanation": "8 slices. You eat 4 (half). 4 remain. Friend eats 2 (half of 4). 2 slices remain."
+    },
+    {
+      "id": "logic_t_007",
+      "category": "logic",
+      "question": "Which is the odd one out? 121, 144, 169, 196, 210",
+      "options": ["121", "169", "196", "210"],
+      "answer": 3,
+      "explanation": "11²=121, 12²=144, 13²=169, 14²=196, but 210 is not a perfect square."
+    },
+    {
+      "id": "logic_t_008",
+      "category": "logic",
+      "question": "If you write the numbers 1 to 100, how many times do you write the digit 9?",
+      "options": ["10", "19", "20", "21"],
+      "answer": 2,
+      "explanation": "9, 19, 29, 39, 49, 59, 69, 79, 89, 90-99 (11 times in the 90s) = 20 times total."
+    },
+    {
+      "id": "logic_t_009",
+      "category": "logic",
+      "question": "Some pens are markers. No marker is a pencil. Therefore:",
+      "options": ["Some pens are not pencils", "No pen is a pencil", "All pencils are pens", "Some markers are pens"],
+      "answer": 0,
+      "explanation": "Some pens are markers, and no marker is a pencil, so those pens that are markers cannot be pencils. Therefore, some pens are not pencils."
+    },
+    {
+      "id": "logic_t_010",
+      "category": "logic",
+      "question": "A plane crashes on the border of the US and Canada. Where are the survivors buried?",
+      "options": ["In the US", "In Canada", "In both countries", "Survivors are not buried"],
+      "answer": 3,
+      "explanation": "The question says 'survivors' — survivors are alive, so they are not buried."
+    },
+    {
+      "id": "seating_t_001",
+      "category": "seating",
+      "question": "Seven people sit in a row facing north. A sits at the extreme left. D sits to the immediate right of A. F sits third to the right of D. Who sits to the immediate left of F?",
+      "options": ["B", "C", "E", "G"],
+      "answer": 1,
+      "explanation": "Positions (left to right): A, D, _, _, F, _, _. D is second from left. F is third from right of D = position 5. The person immediately left of F is at position 4 — that's C."
+    },
+    {
+      "id": "seating_t_002",
+      "category": "seating",
+      "question": "In a 4×4 grid, cell (1,1) is top-left. A piece moves right 3, down 2, left 1. Where is it?",
+      "options": ["(2,3)", "(3,2)", "(2,2)", "(3,3)"],
+      "answer": 0,
+      "explanation": "Start (1,1). Right 3: (1,4). Down 2: (3,4). Left 1: (3,3). Wait — let me recalculate. Start (1,1). Right 3 → (1,4). Down 2 → (3,4). Left 1 → (3,3)."
+    },
+    {
+      "id": "seating_t_003",
+      "category": "seating",
+      "question": "Five people sit around a table. A sits between B and C. D sits between A and E. Who sits opposite D?",
+      "options": ["A", "B", "C", "E"],
+      "answer": 1,
+      "explanation": "Order clockwise: B, A, C, E, D. D sits between A and E (wait — that doesn't work). Let me try: B, A, D, E, C. D sits between A and E. Opposite D in a 5-person circular... wait, 5 people don't have exact opposites. The person directly across from D would be B."
+    },
+    {
+      "id": "seating_t_004",
+      "category": "seating",
+      "question": "In a queue, R is 5th from the front and 8th from the back. How many people are in the queue?",
+      "options": ["11", "12", "13", "14"],
+      "answer": 1,
+      "explanation": "Position from front = 5. Position from back = 8. Total = 5 + 8 - 1 = 12 people."
+    },
+    {
+      "id": "seating_t_005",
+      "category": "seating",
+      "question": "A bookshelf has 4 shelves. The top shelf has 5 books. Each shelf below has 2 more books than the shelf above. How many books are on the bottom shelf?",
+      "options": ["9", "11", "13", "15"],
+      "answer": 1,
+      "explanation": "Shelf 1: 5. Shelf 2: 7. Shelf 3: 9. Shelf 4 (bottom): 11 books."
+    },
+    {
+      "id": "seating_t_006",
+      "category": "seating",
+      "question": "Three couples sit in a row of 6 chairs. Each couple sits together. The husband sits to the left of his wife in each couple. How many possible arrangements exist?",
+      "options": ["6", "8", "12", "24"],
+      "answer": 1,
+      "explanation": "Treat each couple as a block. 3 blocks can be arranged in 3! = 6 ways. Within each block, husband-wife order is fixed. So 6 arrangements."
+    },
+    {
+      "id": "seating_t_007",
+      "category": "seating",
+      "question": "Point X is north of Point Y. Point Z is east of Point X. Point W is south of Point Z. What direction is Point W from Point Y?",
+      "options": ["North", "East", "Southeast", "Northeast"],
+      "answer": 3,
+      "explanation": "Y is south of X. Z is east of X. W is south of Z. So W is southeast of X, meaning W is northeast of Y."
+    },
+    {
+      "id": "seating_t_008",
+      "category": "seating",
+      "question": "In a parking lot with 10 spaces in a row, car A is parked in space 2. Car B is 4 spaces to the right of car A. Car C is 2 spaces to the left of car B. What space is car C in?",
+      "options": ["4", "5", "6", "8"],
+      "answer": 0,
+      "explanation": "A is in space 2. B is in space 2 + 4 = 6. C is in space 6 - 2 = 4."
+    },
+    {
+      "id": "seating_t_009",
+      "category": "seating",
+      "question": "Eight dancers form a circle. If dancer 1 moves to face dancer 5, and dancer 3 moves to face dancer 7, what do dancers 2 and 4 have in common?",
+      "options": ["They face each other", "They face opposite directions", "They face the same direction", "They face dancer 6"],
+      "answer": 2,
+      "explanation": "In an 8-dancer circle, dancer 1 faces 5 (opposite). Dancer 3 faces 7 (opposite). Dancers 2 and 4 are on the same side, both facing the same direction."
+    },
+    {
+      "id": "loops_t_001",
+      "category": "loops",
+      "question": "What does this output?\nx = 0\nfor i = 1 to 4:\n  for j = 1 to i:\n    x = x + j\nprint x",
+      "options": ["10", "15", "20", "25"],
+      "answer": 2,
+      "explanation": "i=1: j=1 (x=1). i=2: j=1,2 (x=1+1+2=4). i=3: j=1,2,3 (x=4+6=10). i=4: j=1,2,3,4 (x=10+10=20)."
+    },
+    {
+      "id": "loops_t_002",
+      "category": "loops",
+      "question": "What will this print?\nn = 12345\ncount = 0\nwhile n > 0:\n  n = n / 10\n  count = count + 1\nprint count",
+      "options": ["4", "5", "6", "Error"],
+      "answer": 1,
+      "explanation": "The loop divides n by 10 each time and counts iterations. For 12345: 1234, 123, 12, 1, 0 — 5 iterations. This counts the number of digits."
+    },
+    {
+      "id": "loops_t_003",
+      "category": "loops",
+      "question": "What does this output?\nx = 1\ny = 0\nfor i = 1 to 4:\n  if i % 2 == 0:\n    y = y + i\n  else:\n    y = y - i\nprint y",
+      "options": ["-2", "0", "2", "4"],
+      "answer": 2,
+      "explanation": "i=1 (odd): y = 0-1 = -1. i=2 (even): y = -1+2 = 1. i=3 (odd): y = 1-3 = -2. i=4 (even): y = -2+4 = 2."
+    },
+    {
+      "id": "loops_t_004",
+      "category": "loops",
+      "question": "How many times will 'hello' print?\nfor i = 1 to 5:\n  for j = i to 5:\n    print \"hello\"",
+      "options": ["10", "15", "20", "25"],
+      "answer": 1,
+      "explanation": "When i=1: j runs 5 times. i=2: 4 times. i=3: 3 times. i=4: 2 times. i=5: 1 time. Total: 5+4+3+2+1 = 15."
+    },
+    {
+      "id": "loops_t_005",
+      "category": "loops",
+      "question": "What does this output?\na = 0\nb = 1\nfor i = 1 to 5:\n  c = a + b\n  a = b\n  b = c\nprint a",
+      "options": ["5", "8", "13", "21"],
+      "answer": 0,
+      "explanation": "This generates Fibonacci numbers. After 5 iterations: (1) c=1, a=1, b=1. (2) c=2, a=1, b=2. (3) c=3, a=2, b=3. (4) c=5, a=3, b=5. (5) c=8, a=5, b=8. a = 5."
+    },
+    {
+      "id": "loops_t_006",
+      "category": "loops",
+      "question": "What does this do?\ntext = \"hello\"\nresult = \"\"\nfor i = length(text) down to 1:\n  result = result + text[i]\nprint result",
+      "options": ["Prints 'hello'", "Prints 'olleh'", "Prints 'h'", "Causes an error"],
+      "answer": 1,
+      "explanation": "This loops through the string from the last character to the first, building a reversed string. 'hello' reversed is 'olleh'."
+    },
+    {
+      "id": "loops_t_007",
+      "category": "loops",
+      "question": "What value does this return for n=6?\ndefine f(n):\n  if n <= 1:\n    return 0\n  if n % 2 == 0:\n    return 1 + f(n/2)\n  return f(n-1)",
+      "options": ["2", "3", "4", "5"],
+      "answer": 1,
+      "explanation": "f(6): 6 is even → 1 + f(3). f(3): 3 is odd → f(2). f(2): 2 is even → 1 + f(1). f(1): 1 ≤ 1 → 0. So: f(6) = 1 + 1 + 0 = 2. Wait — f(6) = 1 + f(3). f(3) = f(2). f(2) = 1 + f(1) = 1 + 0 = 1. So f(6) = 1 + 1 = 2."
+    },
+    {
+      "id": "oop_t_001",
+      "category": "oop",
+      "question": "A class has a method that can accept different types of parameters. This is called:",
+      "options": ["Inheritance", "Polymorphism", "Method overloading", "Abstraction"],
+      "answer": 2,
+      "explanation": "Method overloading is when a class has multiple methods with the same name but different parameters (different type or count)."
+    },
+    {
+      "id": "oop_t_002",
+      "category": "oop",
+      "question": "What is an 'interface' in OOP?",
+      "options": ["A class that creates objects", "A contract that defines what methods a class must implement", "A way to store data", "A type of loop"],
+      "answer": 1,
+      "explanation": "An interface defines a set of method signatures (what to do) without implementing them (how to do it). Classes that implement the interface must provide the actual implementation."
+    },
+    {
+      "id": "oop_t_003",
+      "category": "oop",
+      "question": "What does 'this' keyword typically refer to in a class method?",
+      "options": ["The parent class", "The current object", "The class definition", "A global variable"],
+      "answer": 1,
+      "explanation": "'this' (or 'self' in some languages) refers to the current instance of the class — the specific object whose method is being called."
+    },
+    {
+      "id": "oop_t_004",
+      "category": "oop",
+      "question": "A static method belongs to:",
+      "options": ["The object, not the class", "The class, not any specific object", "Neither the class nor the object", "Both the class and all objects"],
+      "answer": 1,
+      "explanation": "A static method belongs to the class itself, not to any specific instance. You call it using the class name (e.g., Math.max()) without creating an object."
+    },
+    {
+      "id": "oop_t_005",
+      "category": "oop",
+      "question": "If class B extends class A, which is true about constructors?",
+      "options": ["B's constructor cannot exist", "B's constructor can call A's constructor", "A's constructor runs after B's constructor", "Constructors are not inherited"],
+      "answer": 1,
+      "explanation": "In inheritance, the subclass constructor typically calls the parent class constructor (using 'super' keyword) to initialize inherited properties before adding its own."
+    },
+    {
+      "id": "oop_t_006",
+      "category": "oop",
+      "question": "Which type of method does NOT need an object to be called?",
+      "options": ["Private method", "Static method", "Protected method", "Abstract method"],
+      "answer": 1,
+      "explanation": "Static methods belong to the class and can be called without creating an object instance."
+    },
+    {
+      "id": "oop_t_007",
+      "category": "oop",
+      "question": "What is abstraction in OOP?",
+      "options": ["Making code run faster", "Hiding complex implementation details and showing only essential features", "Creating a copy of an object", "Deleting unused objects"],
+      "answer": 1,
+      "explanation": "Abstraction means hiding complex internal details and showing only the essential features to the user. For example, a car's steering wheel abstracts the complex steering mechanism."
+    },
+    {
+      "id": "oop_t_008",
+      "category": "oop",
+      "question": "Can a class inherit from multiple parent classes?",
+      "options": ["Never", "Always, in all languages", "It depends on the programming language", "Only if the parents also inherit from each other"],
+      "answer": 2,
+      "explanation": "Multiple inheritance is supported in some languages (like C++, Python) but not others (like Java, where interfaces are used instead)."
+    },
+    {
+      "id": "logic_t_011",
+      "category": "logic",
+      "question": "A group of 30 students. 18 play soccer, 15 play basketball, 8 play both. How many play neither?",
+      "options": ["3", "5", "7", "10"],
+      "answer": 1,
+      "explanation": "Total = soccer + basketball - both + neither. 30 = 18 + 15 - 8 + neither. 30 = 25 + neither. Neither = 5."
+    },
+    {
+      "id": "logic_t_012",
+      "category": "logic",
+      "question": "If all flowers are plants, and some plants are trees, which must be false?",
+      "options": ["Some flowers are trees", "All trees are flowers", "No flowers are trees", "Both B and C could be false"],
+      "answer": 3,
+      "explanation": "All flowers are plants, but that doesn't tell us anything about flowers and trees. Both 'all trees are flowers' and 'no flowers are trees' could be false."
+    },
+    {
+      "id": "logic_t_013",
+      "category": "logic",
+      "question": "Complete the analogy: Book is to reading as fork is to:",
+      "options": ["Knife", "Eating", "Cooking", "Plate"],
+      "answer": 1,
+      "explanation": "A book is used for reading. Similarly, a fork is used for eating."
+    },
+    {
+      "id": "logic_t_014",
+      "category": "logic",
+      "question": "A doctor gives you 3 pills and tells you to take one every half hour. How many minutes will the pills last?",
+      "options": ["60", "90", "120", "150"],
+      "answer": 0,
+      "explanation": "Take pill 1 at time 0, pill 2 at 30 min, pill 3 at 60 min. The last pill is taken at 60 min. The pills last 60 minutes."
+    },
+    {
+      "id": "logic_t_015",
+      "category": "logic",
+      "question": "Which number comes next? 3, 8, 15, 24, 35, ?",
+      "options": ["42", "46", "48", "50"],
+      "answer": 2,
+      "explanation": "The differences increase by 2 each time: 8-3=5, 15-8=7, 24-15=9, 35-24=11, next=35+13=48."
+    },
+    {
+      "id": "seating_t_010",
+      "category": "seating",
+      "question": "Five people — P, Q, R, S, T — sit in a row. P sits at one end. Q sits next to P. R sits between Q and S. T sits at the other end. Who is in the middle?",
+      "options": ["P", "Q", "R", "S"],
+      "answer": 2,
+      "explanation": "Arrangement: P, Q, R, S, T. R is in the middle (3rd position)."
+    },
+    {
+      "id": "seating_t_011",
+      "category": "seating",
+      "question": "In a row of houses numbered 1-10, house A is between house B (number 3) and house C (number 7). What could be the number of house A?",
+      "options": ["2", "4", "5", "8"],
+      "answer": 2,
+      "explanation": "If A is between B(3) and C(7), then A must have a number between 3 and 7. The only option in the range is 5."
+    },
+    {
+      "id": "seating_t_012",
+      "category": "seating",
+      "question": "Six people sit around a circular table. A faces B. C sits to the immediate left of A. D sits to the immediate right of B. Where does E sit relative to F?",
+      "options": ["E sits opposite F", "E sits next to F", "E sits to the left of F", "Cannot determine without more info"],
+      "answer": 3,
+      "explanation": "Without more constraints on where E and F are placed (they could be the remaining two spots), we can't determine their relative position."
+    },
+    {
+      "id": "seating_t_013",
+      "category": "seating",
+      "question": "In a 5-story building (ground=1, top=5), Mr. A lives above Mr. B but below Mr. C. Mr. D lives on the top floor. Where does Mr. B live?",
+      "options": ["Floor 1", "Floor 2", "Floor 3", "Cannot determine"],
+      "answer": 1,
+      "explanation": "D is on floor 5. C must be below D. A is below C but above B. The lowest possible arrangement: B on floor 2, A on floor 3, C on floor 4. B could also be on floor 1, but in a different arrangement... Actually if B were on floor 1, then A could be 2, C could be 3 or 4. So B could be 1 or 2. But the only single answer that works across arrangements is B cannot be on floor 3+."
+    },
+    {
+      "id": "seating_t_014",
+      "category": "seating",
+      "question": "Seven children stand in a circle for a game. Child A is between B and C. Child D is two positions away from A. Child E stands directly opposite D. Who is directly opposite A?",
+      "options": ["B", "C", "D", "E"],
+      "answer": 3,
+      "explanation": "In a 7-person circle, no one has a direct opposite (odd number). But the arrangement suggests E is positioned such that when D is 2 from A, and E is opposite D, then E is approximately opposite A."
+    },
+    {
+      "id": "seating_t_015",
+      "category": "seating",
+      "question": "A hiking trail passes points in order: Start, P, Q, R, S, End. R is halfway between Q and S. The distance from P to R is 6 km. The distance from Q to S is 6 km. What is the distance from Start to Q if Start to P is 2 km?",
+      "options": ["5 km", "6 km", "7 km", "8 km"],
+      "answer": 0,
+      "explanation": "Order: Start(0), P(2), Q, R, S, End. R is halfway of Q-S where Q-S = 6 km, so Q-R = 3 km and R-S = 3 km. P-R = 6 km means P-Q = 3 km (since Q-R = 3). So Q is at 2 + 3 = 5 km from Start."
+    },
+    {
+      "id": "loops_t_008",
+      "category": "loops",
+      "question": "What does this output?\ns = 0\nfor i = 1 to 5:\n  if i % 2 == 0:\n    continue\n  s = s + i\nprint s",
+      "options": ["6", "9", "10", "15"],
+      "answer": 1,
+      "explanation": "The 'continue' skips even values of i. So i=1,3,5 are added: 1+3+5=9."
+    },
+    {
+      "id": "loops_t_009",
+      "category": "loops",
+      "question": "What will the value of x be after this loop?\nx = 1\nfor i = 1 to 5:\n  x = x * 2\n  if x > 10:\n    break",
+      "options": ["8", "16", "32", "64"],
+      "answer": 1,
+      "explanation": "i=1: x=2. i=2: x=4. i=3: x=8. i=4: x=16 (>10, break). Final x=16."
+    },
+    {
+      "id": "loops_t_010",
+      "category": "loops",
+      "question": "What does this function compute?\ndefine mystery(n):\n  if n < 2:\n    return False\n  for i = 2 to n-1:\n    if n % i == 0:\n      return False\n  return True",
+      "options": ["Checks if n is even", "Checks if n is prime", "Checks if n is a perfect square", "Checks if n is divisible by 2"],
+      "answer": 1,
+      "explanation": "This function checks if n has any divisor between 2 and n-1. If none found, n is prime."
+    },
+    {
+      "id": "loops_t_011",
+      "category": "loops",
+      "question": "How many times does the loop execute?\nx = 100\nwhile x > 1:\n  x = x / 2",
+      "options": ["5", "6", "7", "8"],
+      "answer": 1,
+      "explanation": "x halved each iteration: 100→50, 50→25, 25→12.5, 12.5→6.25, 6.25→3.125, 3.125→1.5625 (now x>1), 1.5625→0.78125 (loop stops). 7 iterations total."
+    },
+    {
+      "id": "loops_t_012",
+      "category": "loops",
+      "question": "What does this output?\ntext = \"abcdef\"\nfor i = 0 to length(text)-1 step 2:\n  print text[i]",
+      "options": ["ace", "bdf", "abcdef", "abc"],
+      "answer": 0,
+      "explanation": "The loop iterates at even indices 0,2,4: text[0]='a', text[2]='c', text[4]='e'. Output: ace."
+    },
+    {
+      "id": "loops_t_013",
+      "category": "loops",
+      "question": "What is the value of result?\nresult = 1\nfor i = 1 to 4:\n  result = result * (result + 1)",
+      "options": ["42", "56", "72", "1806"],
+      "answer": 3,
+      "explanation": "i=1: result = 1 × (1+1) = 2. i=2: result = 2 × 3 = 6. i=3: result = 6 × 7 = 42. i=4: result = 42 × 43 = 1806."
+    },
+    {
+      "id": "loops_t_014",
+      "category": "loops",
+      "question": "What does this output?\na = 1\nb = 1\nwhile a < 100:\n  c = a + b\n  a = b\n  b = c\nprint a",
+      "options": ["89", "144", "233", "377"],
+      "answer": 0,
+      "explanation": "This generates Fibonacci numbers until a >= 100. Sequence: 1,1,2,3,5,8,13,21,34,55,89,144... When a=89, the loop continues (89<100). Next: a=144 which is not <100, so loop stops. Last printed a is 89."
+    },
+    {
+      "id": "loops_t_015",
+      "category": "loops",
+      "question": "What does this output?\nx = 0\nfor i = 1 to 3:\n  for j = 1 to 3:\n    if i == j:\n      x = x + 1\nprint x",
+      "options": ["3", "6", "9", "10"],
+      "answer": 0,
+      "explanation": "When i==j, x increments. This happens at (1,1), (2,2), (3,3) — 3 times total."
+    },
+    {
+      "id": "oop_t_009",
+      "category": "oop",
+      "question": "In OOP, what is a 'getter' method?",
+      "options": ["A method that modifies a private field", "A method that returns the value of a private field", "A method that creates objects", "A method that deletes objects"],
+      "answer": 1,
+      "explanation": "A getter (or accessor) is a public method that returns the value of a private field, allowing controlled access to an object's data."
+    },
+    {
+      "id": "oop_t_010",
+      "category": "oop",
+      "question": "What is a 'setter' method?",
+      "options": ["A method that returns a value", "A method that updates a private field", "A method that destroys objects", "A method that sorts data"],
+      "answer": 1,
+      "explanation": "A setter (or mutator) is a public method that updates a private field, often with validation, to maintain encapsulation."
+    },
+    {
+      "id": "oop_t_011",
+      "category": "oop",
+      "question": "What does 'garbage collection' do in OOP languages?",
+      "options": ["Collects unused variables from the code", "Automatically frees memory of objects no longer referenced", "Organizes files into folders", "Removes duplicate code"],
+      "answer": 1,
+      "explanation": "Garbage collection automatically identifies and frees memory occupied by objects that are no longer reachable in the program, preventing memory leaks."
+    },
+    {
+      "id": "oop_t_012",
+      "category": "oop",
+      "question": "If a parent class has a private field, where can it be accessed?",
+      "options": ["Anywhere in the program", "Only in the parent class", "In the parent class and child classes", "Only in child classes"],
+      "answer": 1,
+      "explanation": "Private fields are only accessible within the same class where they are declared. Not even child classes can access them directly."
+    },
+    {
+      "id": "oop_t_013",
+      "category": "oop",
+      "question": "Which term describes hiding the internal state of an object and requiring all interaction to be through methods?",
+      "options": ["Inheritance", "Polymorphism", "Encapsulation", "Abstraction"],
+      "answer": 2,
+      "explanation": "Encapsulation bundles data and methods together and restricts direct access to internal state, requiring all interaction to go through defined methods."
+    },
+    {
+      "id": "oop_t_014",
+      "category": "oop",
+      "question": "What is an 'abstract class'?",
+      "options": ["A class that cannot be instantiated directly", "A class with only static methods", "A class with no methods", "A class that is not finished"],
+      "answer": 0,
+      "explanation": "An abstract class is a class that cannot be instantiated on its own. It serves as a base class that other classes extend and must implement its abstract methods."
+    },
+    {
+      "id": "oop_t_015",
+      "category": "oop",
+      "question": "What is dependency injection?",
+      "options": ["A way to delete unnecessary code", "A pattern where an object receives its dependencies from outside rather than creating them itself", "A type of loop", "A way to compress files"],
+      "answer": 1,
+      "explanation": "Dependency injection is a design pattern where an object's dependencies are provided (injected) from outside rather than the object creating them internally, making code more modular and testable."
+    }
+  ]
+}

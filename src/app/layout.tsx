@@ -17,7 +17,11 @@ const dmSans = DM_Sans({
 
 export const metadata: Metadata = {
   title: "Preppa — Prepare for Apple Developer Academy",
-  description: "Practice daily. Simulate the real test. Track your readiness. The smartest way to prepare for Apple Developer Academy.",
+  description:
+    "Practice daily. Simulate the real test. Track your readiness. The smartest way to prepare for Apple Developer Academy.",
+  icons: {
+    icon: "/preppa-favicon.webp",
+  },
 };
 
 export default function RootLayout({
@@ -26,7 +30,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${instrumentSerif.variable} ${dmSans.variable} font-sans h-full antialiased`}>
+    <html
+      lang="en"
+      className={`${instrumentSerif.variable} ${dmSans.variable} font-sans h-full antialiased`}
+    >
       <body className="min-h-full bg-white">{children}</body>
     </html>
   );

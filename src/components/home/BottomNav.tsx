@@ -1,15 +1,17 @@
 "use client"
 
+import { Home, FileText, Timer, User } from "lucide-react"
+
 const tabs = [
-  { label: "Home", icon: "🏠", active: true },
-  { label: "Practice", icon: "📝", active: false },
-  { label: "Test", icon: "⏱️", active: false },
-  { label: "Profile", icon: "👤", active: false },
+  { label: "Home", icon: Home, active: true },
+  { label: "Practice", icon: FileText, active: false },
+  { label: "Test", icon: Timer, active: false },
+  { label: "Profile", icon: User, active: false },
 ]
 
 export function BottomNav() {
   return (
-    <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-zinc-200 z-50">
+    <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-border z-50">
       <div className="max-w-lg mx-auto flex justify-around py-2">
         {tabs.map((tab) => (
           <button
@@ -18,7 +20,7 @@ export function BottomNav() {
               tab.active ? "text-accent" : "text-text-secondary"
             }`}
           >
-            <span className="text-lg leading-none">{tab.icon}</span>
+            <tab.icon className="w-5 h-5" strokeWidth={1.5} />
             <span className="text-[10px] font-medium">{tab.label}</span>
           </button>
         ))}
